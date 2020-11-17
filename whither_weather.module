@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Contains whither_weather.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function whither_weather_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the whither_weather module.
+    case 'help.page.whither_weather':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Whither is the Weather?') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function whither_weather_theme() {
+  return [
+    'whither_weather_page' => [
+      'variables' => [
+        'weather' => [
+          'error' => 'D\'Oh!  No weather was found!'
+        ],
+      ],
+    ],
+  ];
+}

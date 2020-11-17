@@ -1,0 +1,7 @@
+{
+    "name": "ziquid/whither_weather",
+    "type": "drupal-module",
+    "description": "Whither is the Weather?",
+    "homepage": "https://www.drupal.org/project/whither_weather",
+    "minimum-stability": "dev"
+}

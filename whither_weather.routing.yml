@@ -1,0 +1,18 @@
+whither_weather.whither_weather_config_form:
+  path: '/admin/config/whither_weather/config'
+  defaults:
+    _form: '\Drupal\whither_weather\Form\ConfigForm'
+    _title: 'ConfigForm'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
+
+whither_weather.weather_controller_weatherPage:
+  path: '/whither_weather/{where}'
+  defaults:
+    _controller: '\Drupal\whither_weather\Controller\WeatherController::weatherPage'
+    _title: 'Weather'
+    where: 'Salt Lake City, Utah, USA'
+  requirements:
+    _permission: 'access content'

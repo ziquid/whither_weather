@@ -1,0 +1,5 @@
+name: 'whither_weather'
+type: module
+description: 'Whither is the Weather?'
+core: 8.x
+package: 'Custom'

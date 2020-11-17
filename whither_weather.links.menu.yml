@@ -1,0 +1,6 @@
+whither_weather.whither_weather_config_form:
+  title: 'Whither Weather Config Form'
+  route_name: whither_weather.whither_weather_config_form
+  description: 'Whither Weather settings'
+  parent: system.admin_config_system
+  weight: 99
